@@ -10,12 +10,12 @@ on:
       IMG_URL:
         description: 'IMG_URL'
         required: true
-        default: 'https://github.com/momo54181/action_build_twrp_device_tree/raw/main/recovery.img'
+        default: 'https://github.com/hep047/action_build_twrp_device_tree/blob/main/recovery.img'
 
 jobs:
   build:
     if: github.event.repository.owner.id == github.event.sender.id
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
 
     
     steps:
